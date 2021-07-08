@@ -1,0 +1,10 @@
+{
+  "name": "CurrencyCreate",
+  "serviceType": "CRUD_CREATE",
+  "entity": "Currency",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PcMedDesc",
+  "type": "ELMPROPERTYCLASS",
+  "childs": [],
+  "dataType": "STRING",
+  "minLen": "",
+  "maxLen": 250,
+  "strValidationType": "NONE",
+  "pattern": "",
+  "lovId": "",
+  "minVal": "",
+  "maxVal": "",
+  "maxDecimals": "",
+  "minDate": "",
+  "maxDate": "",
+  "tbId": "wt_tab_028_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": "Medium Description"
+}

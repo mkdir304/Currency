@@ -1,0 +1,41 @@
+{
+  "type": "DATASTORE",
+  "desc": "",
+  "name": "CURRENCYDENOMINATIONS",
+  "inherited": false,
+  "filePath": "",
+  "childs": [],
+  "dbType": "RDBMS",
+  "columns": [
+    {
+      "name": "CURRENCYCODE",
+      "dataType": "STRING",
+      "length": 3,
+      "pkColumn": true,
+      "mandatory": false
+    },
+    {
+      "name": "DENOMINATIONTYPE",
+      "dataType": "STRING",
+      "length": 20,
+      "pkColumn": true,
+      "mandatory": false
+    },
+    {
+      "name": "DENOMINATIONUNIT",
+      "dataType": "INTEGER",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "DENOMINATIONNAME",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    }
+  ],
+  "constraints": [],
+  "childsMap": {}
+}

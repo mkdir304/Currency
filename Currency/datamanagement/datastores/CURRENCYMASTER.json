@@ -1,0 +1,41 @@
+{
+  "type": "DATASTORE",
+  "desc": "",
+  "name": "CURRENCYMASTER",
+  "inherited": false,
+  "filePath": "",
+  "childs": [],
+  "dbType": "RDBMS",
+  "columns": [
+    {
+      "name": "CURRENCYCODE",
+      "dataType": "STRING",
+      "length": 3,
+      "pkColumn": true,
+      "mandatory": false
+    },
+    {
+      "name": "CURRENCYNAME",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CURRENCYDECIMALS",
+      "dataType": "INTEGER",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CURRENCYROUNDINGUNIT",
+      "dataType": "INTEGER",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    }
+  ],
+  "constraints": [],
+  "childsMap": {}
+}

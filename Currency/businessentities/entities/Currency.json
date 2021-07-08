@@ -1,0 +1,254 @@
+{
+  "name": "Currency",
+  "type": "ENTITY",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "currencyMaster",
+      "desc": "Currency",
+      "inherited": false,
+      "properties": {},
+      "relationType": "ONETOONE",
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "baCcyCode",
+          "name": "currencyCode",
+          "desc": "Code",
+          "inherited": false,
+          "filterable": true,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": 3,
+            "maxLen": 3,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLEBIZATTRIBUTE",
+          "key": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baCcyName",
+          "name": "currencyName",
+          "desc": "Name",
+          "inherited": false,
+          "filterable": true,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": 1,
+            "maxLen": 100,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLEBIZATTRIBUTE",
+          "key": false
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "currencyDecimals",
+          "desc": "Decimals",
+          "inherited": false,
+          "filterable": true,
+          "properties": {
+            "dataType": "INTEGER",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          }
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "currencyRoundingUnit",
+          "desc": "Rounding Unit",
+          "inherited": false,
+          "properties": {
+            "dataType": "INTEGER",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          }
+        },
+        {
+          "type": "NODE",
+          "superName": "",
+          "name": "currencyDenominations",
+          "desc": "Denominations",
+          "inherited": false,
+          "properties": {},
+          "relationType": "ONETOMANY",
+          "childs": [
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "name": "denominationType",
+              "desc": "Type",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 20,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "key": true
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "name": "denominationUnit",
+              "desc": "Unit",
+              "inherited": false,
+              "properties": {
+                "dataType": "INTEGER",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              }
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "PcShortDesc",
+              "name": "denominationName",
+              "desc": "Name",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 100,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "superType": "ELMPROPERTYCLASS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "name": "CurrencyCreate",
+      "type": "CRUD_CREATE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CurrencyUpdate",
+      "type": "CRUD_UPDATE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CurrencyQuery",
+      "type": "CRUD_QUERY",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CurrencyDelete",
+      "type": "CRUD_DELETE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CurrencySummary",
+      "type": "CRUD_SEARCH",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    }
+  ],
+  "tbId": "wt_tab_037_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "superType": "SIMPLEBIZATTRIBUTE",
+  "superName": "",
+  "xdmMapping": "dsCurrency",
+  "desc": "",
+  "relationType": "ONETOONE",
+  "auditRequired": "",
+  "auditXdmMapping": "",
+  "timeBound": "",
+  "properties": {},
+  "dataStoreId": "",
+  "dataStoreColId": "",
+  "inherited": "",
+  "constraints": [],
+  "key": "",
+  "filterable": "",
+  "resultSet": ""
+}

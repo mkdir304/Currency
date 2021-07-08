@@ -1,0 +1,26 @@
+{
+  "name": "PcShortDesc",
+  "type": "ELMPROPERTYCLASS",
+  "childs": [],
+  "dataType": "STRING",
+  "minLen": "",
+  "maxLen": 100,
+  "strValidationType": "NONE",
+  "pattern": "",
+  "lovId": "",
+  "minVal": "",
+  "maxVal": "",
+  "maxDecimals": "",
+  "minDate": "",
+  "maxDate": "",
+  "tbId": "wt_tab_027_",
+  "dynamic": {
+    "lovids": [
+      {
+        "text": "Select LOV",
+        "value": ""
+      }
+    ]
+  },
+  "desc": "Short Description"
+}

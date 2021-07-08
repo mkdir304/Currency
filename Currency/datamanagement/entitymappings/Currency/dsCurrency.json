@@ -1,0 +1,332 @@
+{
+  "type": "XDMENTITYMAPPING",
+  "desc": "",
+  "name": "dsCurrency",
+  "inherited": false,
+  "superType": "SIMPLEBIZATTRIBUTE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDMNODE",
+      "desc": "Currency",
+      "name": "currencyMaster",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "childs": [
+        {
+          "type": "XDMELEMENT",
+          "desc": "Code",
+          "name": "currencyCode",
+          "inherited": false,
+          "superType": "SIMPLEBIZATTRIBUTE",
+          "superName": "baCcyCode",
+          "filePath": "",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscurrencymaster",
+            "dataStoreColId": "CURRENCYCODE"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_1",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 3,
+            "minLen": 3,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": true,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDMELEMENT",
+          "desc": "Name",
+          "name": "currencyName",
+          "inherited": false,
+          "superType": "SIMPLEBIZATTRIBUTE",
+          "superName": "baCcyName",
+          "filePath": "",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscurrencymaster",
+            "dataStoreColId": "CURRENCYNAME"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_2",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 100,
+            "minLen": 1,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDMELEMENT",
+          "desc": "Decimals",
+          "name": "currencyDecimals",
+          "inherited": false,
+          "superType": "NONE",
+          "superName": "",
+          "filePath": "",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscurrencymaster",
+            "dataStoreColId": "CURRENCYDECIMALS"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_3",
+            "dataType": "INTEGER",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 2147483647,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDMELEMENT",
+          "desc": "Rounding Unit",
+          "name": "currencyRoundingUnit",
+          "inherited": false,
+          "superType": "NONE",
+          "superName": "",
+          "filePath": "",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscurrencymaster",
+            "dataStoreColId": "CURRENCYROUNDINGUNIT"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_4",
+            "dataType": "INTEGER",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 2147483647,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDMNODE",
+          "desc": "Denominations",
+          "name": "currencyDenominations",
+          "inherited": false,
+          "superType": "NONE",
+          "superName": "",
+          "filePath": "",
+          "childs": [
+            {
+              "type": "XDMELEMENT",
+              "desc": "Type",
+              "name": "denominationType",
+              "inherited": false,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscurrencydenominations",
+                "dataStoreColId": "DENOMINATIONTYPE"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_5",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 20,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": true,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDMELEMENT",
+              "desc": "Unit",
+              "name": "denominationUnit",
+              "inherited": false,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscurrencydenominations",
+                "dataStoreColId": "DENOMINATIONUNIT"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_6",
+                "dataType": "INTEGER",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 2147483647,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDMELEMENT",
+              "desc": "Name",
+              "name": "denominationName",
+              "inherited": false,
+              "superType": "ELMPROPERTYCLASS",
+              "superName": "PcShortDesc",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscurrencydenominations",
+                "dataStoreColId": "DENOMINATIONNAME"
+              },
+              "properties": {
+                "propClassName": "PcShortDesc",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 100,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            }
+          ],
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreId": "dscurrencydenominations",
+                "dataStoreName": "CURRENCYDENOMINATIONS",
+                "parentDataStoreId": "dscurrencymaster",
+                "customRelation": false,
+                "relationWithParent": [
+                  {
+                    "column": "CURRENCYCODE",
+                    "parentColumn": "CURRENCYCODE"
+                  }
+                ],
+                "propagationColumns": [
+                  {
+                    "fromColumn": "CURRENCYCODE",
+                    "toColumn": "CURRENCYCODE"
+                  }
+                ]
+              }
+            ]
+          },
+          "relationType": "ONETOMANY"
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dscurrencymaster",
+            "dataStoreName": "CURRENCYMASTER",
+            "parentDataStoreId": "dscurrencymaster",
+            "customRelation": false,
+            "relationWithParent": [
+              {
+                "column": "CURRENCYCODE",
+                "parentColumn": "CURRENCYCODE"
+              }
+            ],
+            "propagationColumns": []
+          }
+        ]
+      },
+      "relationType": "ONETOONE"
+    }
+  ],
+  "persistenceDetails": {
+    "dataStores": []
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "entityPersistenceDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dscurrencymaster",
+        "dataStoreName": "CURRENCYMASTER",
+        "parentDataStoreId": "dscurrencymaster",
+        "customRelation": false,
+        "relationWithParent": [
+          {
+            "column": "CURRENCYCODE",
+            "parentColumn": "CURRENCYCODE"
+          }
+        ],
+        "propagationColumns": []
+      },
+      {
+        "dataStoreId": "dscurrencydenominations",
+        "dataStoreName": "CURRENCYDENOMINATIONS",
+        "parentDataStoreId": "dscurrencymaster",
+        "customRelation": false,
+        "relationWithParent": [
+          {
+            "column": "CURRENCYCODE",
+            "parentColumn": "CURRENCYCODE"
+          }
+        ],
+        "propagationColumns": [
+          {
+            "fromColumn": "CURRENCYCODE",
+            "toColumn": "CURRENCYCODE"
+          }
+        ]
+      }
+    ]
+  },
+  "masterDataStore": "dscurrencymaster"
+}

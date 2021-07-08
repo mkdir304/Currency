@@ -1,0 +1,25 @@
+{
+  "git": {
+    "gitRepoUrl": "https://github.com/aksathar/Currency.git",
+    "gitAppName": "Currency",
+    "gitBranch": "master"
+  },
+  "Currency": {
+    "name": "Currency",
+    "uiReq": "Y",
+    "uiType": "EMBEDDED",
+    "logPath": "",
+    "jndiName": "xelerate-studio",
+    "firstScreen": "Login",
+    "lang": "en"
+  },
+  "CurrencyTest": {
+    "name": "CurrencyTest",
+    "uiReq": "Y",
+    "uiType": "EMBEDDED",
+    "logPath": "",
+    "jndiName": "CurrencyTest",
+    "firstScreen": "Login",
+    "lang": "en"
+  }
+}

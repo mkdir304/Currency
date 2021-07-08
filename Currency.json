@@ -1,0 +1,7 @@
+{
+        "name":"Currency",
+        "desc":"Default Application for Xelerate",
+		"filePath": "/Currency/Currency.json",
+        "type":"APPLICATION",
+        "childs":[]    
+}

@@ -1,0 +1,10 @@
+{
+  "name": "CurrencySummary",
+  "serviceType": "CRUD_SEARCH",
+  "entity": "Currency",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

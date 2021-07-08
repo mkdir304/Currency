@@ -1,0 +1,189 @@
+{
+  "name": "Input",
+  "type": "INPUT",
+  "desc": "Input Params",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "CurrencyMaster",
+      "desc": "CurrencyMaster",
+      "inherited": false,
+      "properties": {},
+      "relationType": "ONETOONE",
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "baCcyCode",
+          "name": "currencyCode",
+          "desc": "Currency Code",
+          "inherited": false,
+          "filterable": true,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": 3,
+            "maxLen": 3,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLEBIZATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "PcShortDesc",
+          "name": "currencyName",
+          "desc": "Currency Name",
+          "inherited": false,
+          "filterable": true,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": 100,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "ELMPROPERTYCLASS"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "currencyDecimals",
+          "desc": "Decimals",
+          "inherited": false,
+          "filterable": true,
+          "properties": {
+            "dataType": "INTEGER",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          }
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "currencyRoundingUnit",
+          "desc": "Rounding Unit",
+          "inherited": false,
+          "properties": {
+            "dataType": "INTEGER",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          }
+        },
+        {
+          "type": "NODE",
+          "superName": "",
+          "name": "currencyDenominations",
+          "desc": "CurrencyDenominations",
+          "inherited": false,
+          "properties": {},
+          "relationType": "ONETOMANY",
+          "childs": [
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "name": "DenominationType",
+              "desc": "Denomination Type",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 20,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              }
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "name": "DenominationUnit",
+              "desc": "Denomination Unit",
+              "inherited": false,
+              "properties": {
+                "dataType": "INTEGER",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              }
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "PcShortDesc",
+              "name": "DenominationName",
+              "desc": "Denomination Name",
+              "inherited": false,
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 100,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "superType": "ELMPROPERTYCLASS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dynamic": {},
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  }
+}

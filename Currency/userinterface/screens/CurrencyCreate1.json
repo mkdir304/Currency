@@ -1,0 +1,618 @@
+{
+  "name": "CurrencyCreate1",
+  "desc": "CurrencyCreate screen",
+  "type": "SCREEN",
+  "scrCategory": "DETAILED",
+  "entities": [
+    "Currency"
+  ],
+  "services": [
+    "CurrencyCreate"
+  ],
+  "childs": [],
+  "childsMap": {},
+  "dsgnrIdCntr": 9,
+  "header": {
+    "elmId": "header",
+    "childs": [
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "panel",
+        "elmType": "COMPLEX",
+        "elmSubType": "PANEL",
+        "dsgnrId": "CurrencyCreate1_000000001",
+        "variations": "TRANSPARENT",
+        "childs": [
+          {
+            "elmId": "navbar",
+            "elmType": "COMPLEX",
+            "elmSubType": "NAVBAR",
+            "dsgnrId": "CurrencyCreate1_000000002",
+            "variations": "TRANSPARENT",
+            "childs": [
+              {
+                "rows": [],
+                "cols": [],
+                "elmId": "grid",
+                "elmType": "GRID",
+                "elmSubType": "GRID",
+                "dsgnrId": "CurrencyCreate1_000000003",
+                "gridtype": "CUSTOM",
+                "custCols": [
+                  {
+                    "custWidthValue": "200",
+                    "custWidthType": "px"
+                  },
+                  {
+                    "custWidthValue": "1",
+                    "custWidthType": "auto"
+                  }
+                ],
+                "childs": [
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CurrencyCreate1_000000004",
+                    "justifyself": "LEFT",
+                    "alignself": "CENTER",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "image",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "IMAGE",
+                        "dsgnrId": "CurrencyCreate1_000000005",
+                        "url": "assets/img/logo-header.png",
+                        "paddingLeftValue": "4"
+                      }
+                    ]
+                  },
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CurrencyCreate1_000000006",
+                    "justifyself": "RIGHT",
+                    "alignself": "CENTER",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "hyperlink",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "HYPERLINK",
+                        "dsgnrId": "CurrencyCreate1_000000007",
+                        "id": "notification",
+                        "icon": "fa fa-fw fa-bell-o",
+                        "iconposition": "RIGHT",
+                        "iconsize": "LARGE"
+                      },
+                      {
+                        "align": "left",
+                        "type": "p",
+                        "value": "Text",
+                        "format": "Normal",
+                        "elmId": "text",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "TEXT",
+                        "dsgnrId": "CurrencyCreate1_000000008",
+                        "id": "userLanding",
+                        "paddingRightValue": "3",
+                        "paddingLeftValue": "3"
+                      },
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000009",
+                        "icon": "fa fa-fw fa-sign-out",
+                        "iconposition": "RIGHT",
+                        "iconsize": "LARGE",
+                        "variations": "TRANSPARENT",
+                        "size": "MEDIUM",
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "xelerate.server.logout"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dsgnrId": "header"
+  },
+  "sidebar": {
+    "elmId": "sidebar",
+    "childs": [],
+    "dsgnrId": "sidebar"
+  },
+  "body": {
+    "elmId": "body",
+    "dsgnrId": "body",
+    "childs": [
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "panel",
+        "elmType": "COMPLEX",
+        "elmSubType": "PANEL",
+        "dsgnrId": "CurrencyCreate1_000000010",
+        "variations": "TRANSPARENT",
+        "paddingLeftValue": "4",
+        "paddingRightValue": "4",
+        "childs": [
+          {
+            "elmId": "navbar",
+            "elmType": "COMPLEX",
+            "elmSubType": "NAVBAR",
+            "dsgnrId": "CurrencyCreate1_000000011",
+            "variations": "TRANSPARENT",
+            "marginBottomValue": "2",
+            "marginTopValue": "4",
+            "childs": [
+              {
+                "rows": [],
+                "cols": [],
+                "elmId": "grid",
+                "elmType": "GRID",
+                "elmSubType": "GRID",
+                "dsgnrId": "CurrencyCreate1_000000012",
+                "gridtype": "RESPONSIVE",
+                "responsivecolcount": 2,
+                "childs": [
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CurrencyCreate1_000000013",
+                    "phonelandscape": "xle-sm-col4",
+                    "phoneportrait": "xle-ti-col4",
+                    "desktop": "xle-lg-col4",
+                    "tablet": "xle-md-col4",
+                    "widescreen": "xle-xl-col4",
+                    "alignself": "CENTER",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000014",
+                        "id": "backbtn",
+                        "icon": "fa fa-arrow-left",
+                        "iconposition": "RIGHT",
+                        "classes": "mr-1",
+                        "variations": "TRANSPARENT",
+                        "style": "round",
+                        "size": "sm",
+                        "maxWidth": "35",
+                        "maxWidthType": "px",
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "back"
+                          }
+                        ]
+                      },
+                      {
+                        "align": "left",
+                        "type": "h4",
+                        "value": "Currency Detailed",
+                        "format": "Normal",
+                        "elmId": "text",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "TEXT",
+                        "dsgnrId": "CurrencyCreate1_000000015",
+                        "id": "headerTitle",
+                        "marginTopValue": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CurrencyCreate1_000000016",
+                    "phonelandscape": "xle-sm-col8",
+                    "phoneportrait": "xle-ti-col8",
+                    "desktop": "xle-lg-col8",
+                    "tablet": "xle-md-col8",
+                    "widescreen": "xle-xl-col8",
+                    "justifyself": "RIGHT",
+                    "elementstack": "HORIZONTAL",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000017",
+                        "id": "querybtn",
+                        "icon": "fa fa-search",
+                        "iconposition": "RIGHT",
+                        "classes": "mr-1",
+                        "variations": "PRIMARYOUTLINE",
+                        "style": "round",
+                        "size": "sm",
+                        "shadow": "Y",
+                        "maxWidth": "35",
+                        "maxWidthType": "px",
+                        "visible": "N",
+                        "custAttrs": [
+                          {
+                            "attrName": "title",
+                            "attrValue": "Query"
+                          }
+                        ],
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "query"
+                          }
+                        ]
+                      },
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000018",
+                        "id": "newbtn",
+                        "icon": "fa fa-save",
+                        "iconposition": "RIGHT",
+                        "classes": "mr-1",
+                        "variations": "PRIMARYOUTLINE",
+                        "size": "sm",
+                        "style": "round",
+                        "shadow": "Y",
+                        "maxWidth": "35",
+                        "maxWidthType": "px",
+                        "custAttrs": [
+                          {
+                            "attrName": "title",
+                            "attrValue": "Save"
+                          }
+                        ],
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "create"
+                          }
+                        ]
+                      },
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000019",
+                        "id": "savebtn",
+                        "icon": "fa fa-save",
+                        "iconposition": "RIGHT",
+                        "classes": "mr-1",
+                        "variations": "PRIMARYOUTLINE",
+                        "size": "sm",
+                        "style": "round",
+                        "shadow": "Y",
+                        "maxWidth": "35",
+                        "maxWidthType": "px",
+                        "custAttrs": [
+                          {
+                            "attrName": "title",
+                            "attrValue": "Save"
+                          }
+                        ],
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "modify"
+                          }
+                        ]
+                      },
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000020",
+                        "id": "deletebtn",
+                        "icon": "fa fa-trash",
+                        "iconposition": "RIGHT",
+                        "classes": "mr-1",
+                        "variations": "PRIMARYOUTLINE",
+                        "size": "sm",
+                        "style": "round",
+                        "shadow": "Y",
+                        "maxWidth": "35",
+                        "maxWidthType": "px",
+                        "custAttrs": [
+                          {
+                            "attrName": "title",
+                            "attrValue": "Delete"
+                          }
+                        ],
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "delete"
+                          }
+                        ]
+                      },
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CurrencyCreate1_000000021",
+                        "id": "clearbtn",
+                        "icon": "fa fa-retweet",
+                        "iconposition": "RIGHT",
+                        "classes": "mr-1",
+                        "variations": "PRIMARYOUTLINE",
+                        "size": "sm",
+                        "style": "round",
+                        "shadow": "Y",
+                        "maxWidth": "35",
+                        "maxWidthType": "px",
+                        "custAttrs": [
+                          {
+                            "attrName": "title",
+                            "attrValue": "Reset"
+                          }
+                        ],
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "clear"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "panel",
+        "elmType": "COMPLEX",
+        "elmSubType": "PANEL",
+        "dsgnrId": "CurrencyCreate1_000000022",
+        "variations": "TRANSPARENT",
+        "paddingRightValue": "4",
+        "paddingLeftValue": "4",
+        "childs": [
+          {
+            "rows": [],
+            "cols": [],
+            "elmId": "grid",
+            "elmType": "GRID",
+            "elmSubType": "GRID",
+            "dsgnrId": "CurrencyCreate1_000000023",
+            "gridtype": "RESPONSIVE",
+            "responsivecolcount": "1",
+            "childs": [
+              {
+                "elmId": "cell",
+                "elmType": "COMPLEX",
+                "elmSubType": "CELL",
+                "dsgnrId": "CurrencyCreate1_000000024",
+                "phonelandscape": "xle-sm-col12",
+                "phoneportrait": "xle-ti-col12",
+                "desktop": "xle-lg-col12",
+                "tablet": "xle-md-col12",
+                "widescreen": "xle-xl-col12",
+                "elementstack": "VERTICAL",
+                "childs": [
+                  {
+                    "custAttrs": [
+                      {
+                        "attrName": "",
+                        "attrValue": ""
+                      }
+                    ],
+                    "elmId": "panel",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "PANEL",
+                    "dsgnrId": "CurrencyCreate1_000000025",
+                    "marginBottomValue": "2",
+                    "childs": [
+                      {
+                        "custAttrs": [
+                          {
+                            "attrName": "",
+                            "attrValue": ""
+                          }
+                        ],
+                        "elmId": "form",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "FORM",
+                        "dsgnrId": "CurrencyCreate1_000000026",
+                        "paddingBottomValue": "4",
+                        "childs": [
+                          {
+                            "rows": [],
+                            "cols": [],
+                            "elmId": "grid",
+                            "elmType": "GRID",
+                            "elmSubType": "GRID",
+                            "dsgnrId": "CurrencyCreate1_000000027",
+                            "gridtype": "RESPONSIVE",
+                            "childs": [
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CurrencyCreate1_000000028",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CurrencyCreate1_000000032",
+                                    "title": "Code",
+                                    "xpath": "CurrencyCreate_ip.currencyMaster.currencyCode",
+                                    "inputtype": "TEXT"
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CurrencyCreate1_000000029",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CurrencyCreate1_000000033",
+                                    "title": "Name",
+                                    "xpath": "CurrencyCreate_ip.currencyMaster.currencyName",
+                                    "inputtype": "TEXT"
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CurrencyCreate1_000000030",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CurrencyCreate1_000000034",
+                                    "title": "Decimals",
+                                    "xpath": "CurrencyCreate_ip.currencyMaster.currencyDecimals",
+                                    "inputtype": "NUMBER"
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CurrencyCreate1_000000031",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CurrencyCreate1_000000035",
+                                    "title": "Rounding Unit",
+                                    "xpath": "CurrencyCreate_ip.currencyMaster.currencyRoundingUnit",
+                                    "inputtype": "NUMBER"
+                                  }
+                                ]
+                              }
+                            ],
+                            "responsivecolcount": 4
+                          }
+                        ],
+                        "title": "Currency"
+                      }
+                    ]
+                  },
+                  {
+                    "elmId": "table",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "TABLE",
+                    "dsgnrId": "CurrencyCreate1_000000036",
+                    "editable": "Y",
+                    "multiple": "Y",
+                    "selectall": "Y",
+                    "search": "N",
+                    "paginationtype": "full_numbers",
+                    "events": [],
+                    "title": "Denominations",
+                    "childs": [
+                      {
+                        "elmId": "input",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "INPUT",
+                        "dsgnrId": "CurrencyCreate1_000000037",
+                        "title": "Type",
+                        "xpath": "CurrencyCreate_ip.currencyMaster.currencyDenominations[recno].denominationType",
+                        "inputtype": "TEXT"
+                      },
+                      {
+                        "elmId": "input",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "INPUT",
+                        "dsgnrId": "CurrencyCreate1_000000038",
+                        "title": "Unit",
+                        "xpath": "CurrencyCreate_ip.currencyMaster.currencyDenominations[recno].denominationUnit",
+                        "inputtype": "NUMBER"
+                      },
+                      {
+                        "elmId": "input",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "INPUT",
+                        "dsgnrId": "CurrencyCreate1_000000039",
+                        "title": "Name",
+                        "xpath": "CurrencyCreate_ip.currencyMaster.currencyDenominations[recno].denominationName",
+                        "inputtype": "TEXT"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "elmId": "footer",
+    "childs": [],
+    "dsgnrId": "footer"
+  }
+}
